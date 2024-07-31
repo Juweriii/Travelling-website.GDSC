@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+==============
+Variables
+==============
+*/
+:root{
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-gray:#0058530D;
+    --ff-primary: "Open Sans", sans-serif;
+    --ff-secondary: "Poppins", sans-serif;
+    --radius: 15px;
+}
+
+/* 
+==============
+    Globals
+==============
+*/
+
+body{
+    font-family: var(--ff-primary);
+    background-color: var(--clr-white);
+    color: var(--clr-white);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5{
+    text-transform: capitalize;
+}
+p{
+    font-weight: 400;
+}
+
+
+/* 
+=================
+header
+=================
+*/
+/* 
+=============
+navbar
+==============
+*/
+/* 
+=========
+hero
+=========
+*/
+.hero{
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.81) 0%, rgba(72, 72, 72, 0) 31.25%, rgba(158, 158, 158, 0) 77.6%, #FFFFFF 85.42%), url("../images/hero.png") center/cover no-repeat;
+}
+
+.hero-banner{
+    text-align: center;  
+}
+
+.hero-banner h1{
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.hero-banner p{
+    margin-bottom: 2rem;
+}
