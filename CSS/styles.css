@@ -13,7 +13,8 @@ Variables
 :root{
     --clr-black: #000000;
     --clr-white: #FFFFFF;
-    --clr-gray:#0058530D;
+    --clr-gray: #5E6282;
+    --clr-purple:#5d18cb;
     --ff-primary: "Open Sans", sans-serif;
     --ff-secondary: "Poppins", sans-serif;
     --radius: 15px;
@@ -53,29 +54,7 @@ p{
     font-weight: 400;
 }
 
-.card-body{
-    padding: 0;
-}
-.card{
-    padding: 2rem;
-    border-radius: var(--radius);
-    background-color: var(--clr-gray);
-    border: none;
-    margin-bottom: 2rem;
-    width: 18rem;
-}
 
-.card-title{
-    font-weight: 700;
-}
-
-.section-title h2{
-    color: var(--clr-black);
-    text-align: center;
-    font-weight: 700;
-    margin: 0 0 3rem 0;
-    font-size: 40px;
-}
 /* 
 =================
 header
@@ -86,7 +65,6 @@ header
 navbar
 ==============
 */
-
 /* 
 =========
 hero
@@ -113,175 +91,484 @@ hero
 .hero-banner p{
     margin-bottom: 2rem;
 }
+.book-your-trip{
+    background-color:var(--clr-white) ;
+    width: 100%;
+    height: 100vh;
 
-
-
-/* 
-===========
-services 
-===========
-*/
-
-
-
-.services-icon{
-    margin-bottom: 2rem;
+   
+   
 }
 
-.ticket-icon{
-    width: 46px;
-    height: 28px;
-}
-.hotel-icon{
-    width: 45px;
-    height: 45px;
-
-}
-.tour-icon{
-    width: 41px;
-    height: 41px;
-}
-
-
-.tour-card-title{
-    font-size: 24px;
-}
-
-.tour-card-text{
-    font-size: 16px;
-}
-
-
-
-@media screen and (min-width:927px){
-    .tour-card{
-        width: 416px;
-        height: 232px;
-    }
-}
-.hotel-card{
-    background-color: var(--clr-white);
-    box-shadow: 0px 4px 16px 0px #00000026;
-}
-
-.services-center{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-bottom: 5rem; 
-}
-
-
-/* 
-===========
-why us
-===========
-*/
-
-
-.why-us-icon{
-    width: 25px;
-    height: 25px;
-}
-
-.why-us-center{
-    background:url("../images/world map 1.png") no-repeat center/cover;
-    background-color: var(--clr-gray);
-    max-height: 733px;
-    max-width: 100vw;
-}
-
-.why-us-content {
+.book-your-trip .title{
+    text-align: center;
     color: var(--clr-black);
-    text-align: center;
-    font-size: 0.75rem;
-    margin-bottom: 3rem;
+    margin-bottom: 50px;
 }
+.book-your-trip .title h1{
+   font-size: 1.8rem;
+   font-weight: bold;
+   margin-top: 70px;
+   
+}
+.book-your-trip .title p{
+    font-size: 1.2rem;
+    
+    font-weight: 350;
+    
+ }
 
-.why-us-card-body p{
-    text-transform: capitalize;
-    font-size: 0.7rem;
-}
-
-.why-us-card-body h5{
-    font-size: 1.3rem;
-}
-
-.why-us-title h2{
-    font-size: 1.75rem;
-    padding-top: 2rem;
-    margin-bottom: 0.5rem;
-}
-.why-us-card-title{
-    margin: 0;
-}
-
-.why-us-card{
-    background-color: var(--clr-white);
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    margin-bottom: 5rem;
-}
-
-.why-us-cards{
+ .card-text-wrap{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+   margin-top: 150px;
+
+}
+.steps-wrap{
+    display: block;
+    margin-left: 300px;
+    margin-right: 40px;
+ 
+
 }
 
-.why-us-icon{
-    align-self: center;
-    margin-bottom: 2rem;
-}
 
-/* This media query is for very small phones
-forming 1 column. Not common only for completeness
-*/
-@media screen and (max-width: 327px) {
-    .why-us-center {
-        max-height: 100%; 
-    }
-    .why-us-card {
-        width: 80%; 
-        margin-bottom: 2rem;
-    }
-}
+.trip-to-greece-card{
 
-@media screen and (min-width: 1127px){
-    .why-us-card-title{
-        margin: 1rem;
-    }
-    .why-us-content{
-        font-size: 16px;
-        margin-bottom: 5rem;
-    }
+    width: 320px;
+    height: 340px;
+    margin-left: 200px;
+    border-radius: 20px;
+    color:var(--clr-black) ;
+   position: relative;
+
+
+   box-shadow: 30px -50px 100px  rgba(89, 176, 230, 0.324), -10px 10px 10px rgba(0, 0, 0, 0.04);
+
+
     
-    .why-us-card-body p{
-        font-size: 20px;
-    }
+     border: 2px solid #fff ;
     
-    .why-us-card-body h5{
-        font-size: 36px;
+
+
+
+    
+    
+}
+
+
+
+
+.trip-to-greece-card .image-to-greek{
+    width: 280px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    grid-column-gap: 25px;
+   
+   
+    
+   
+}
+.trip-to-greece-card h1{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+.trip-to-greece-card p{
+    font-size: 0.8rem;
+     margin-top: 10px;
+    font-weight: 100;
+    margin-left: 30px;
+    color: var( --clr-gray);
+
+
+
+}
+   
+.choose-destination{
+    color:var(--clr-black) ;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    margin-bottom: 30px;
+    
+}
+.choose-destination img{
+    width: 65px;
+    height: 60px;
+
+    grid-row:1/3;
+    border-radius: 10px;
+
+}
+.choose-destination h1{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var( --clr-gray);
+    
+}
+.choose-destination p{
+    font-size: 0.7rem;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    color: var( --clr-gray);
+    white-space: nowrap;
+  
+}
+.make-payment{
+    color:var(--clr-black) ;
+   display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+
+   
+    margin-bottom: 30px;
+}
+.make-payment img{
+    width: 65px;
+    height: 65px;
+    grid-row:1/3;
+    border-radius: 10px;
+    
+    
+   
+}
+.make-payment h1{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var( --clr-gray);
+}
+.make-payment p{
+    font-size: 0.7rem;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    color: var( --clr-gray);
+    white-space: nowrap;
+  
+}
+.reach-airport{
+    color:var(--clr-black) ;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+}
+.reach-airport img{
+    width: 65px;
+    height: 65px;
+    grid-row:1/3;
+    border-radius: 10px;
+}
+.reach-airport h1{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var( --clr-gray);
+}
+.reach-airport p{
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: var( --clr-gray);
+    white-space: nowrap;
+  
+}
+.media-image{
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    grid-gap:24px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.media-image img{
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+   margin-bottom: 20px;
+  
+
+
+}
+.card-img {
+    
+    border-radius: 50%;
+   
+}
+.tele-img {
+    border-radius: 50%;
+  
+}
+.leaf-img{
+  
+
+    border-radius: 50%;
+}
+.small-card{
+    background-color: #fff;
+    border: 2px solid #fff;
+    width: 255px;
+    height: 120px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -149px;
+    margin-left: 170px;
+    z-index:2;
+    box-shadow:0px 7px 6px rgba(0, 0, 0, 0.04),10px 0 15px rgba(255, 255, 255, 0.4);
+  
+   
+ 
+}
+
+.small-card img{
+    width: 50px;
+    height: auto;
+   float: left;
+    border-radius: 50%;
+    margin-right: 15px;
+ 
+
+
+
+}
+.small-card h2{
+  
+    font-size: 0.7rem;
+    margin-top: 5px;
+
+    margin-bottom: 10px;
+
+
+}
+.small-card h3{
+  
+    font-size: 0.6rem;
+    margin-top: 15px;
+    margin-bottom:5px;
+
+
+
+}
+
+.small-card span{
+   color:var( --clr-purple);
+   margin-left: 60px;
+}
+.small-card p{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 0.6rem;
+    color: var( --clr-gray);
+}
+.small-card #load{
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+
+
+.bottom-card{
+    display: flex;
+    align-content: center;
+    margin-bottom: 5px;
+   
+}
+
+.bottom-card img{
+    width: 15px;
+    height: auto;
+    margin-top: -10px;
+    margin-right: -13px;
+    margin-left: 30px;
+
+    
+    
+}
+
+
+.bx.bx-heart{
+    padding-left: 130px;
+    margin-top: 2px;
+    font-size: 1.2rem;
+    color: #5d18cb;
+    margin-top: -2px;
+
+    
+}
+.bottom-card #buliding-number{
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+
+
+
+}
+@media(max-width: 375px) {
+    .book-your-trip .title h1{
+       margin-left: 20px;
+       font-size: 1.2rem;
+
+
+
+     
     }
-    .why-us-title h2{
-        font-size: 40px;
-        padding-top: 5rem;
-        margin-bottom: 2rem;
+    .book-your-trip .title p{
+        font-size: 0.9rem;
+      
+ 
     }
-    .why-us-card-title{
-        margin: 1rem;
+    .card-text-wrap{
+        display: block;
+        margin-top: 10px;
+
+        
     }
 
-    .why-us-icon{
-        width: 42px;
-        height: 42px;
+  
+   .steps-wrap{
+    margin-left: 20px;
+    grid-gap: 0px;
+   }
+   
+
+   
+   .make-payment{
+    margin-top: 5px;
+   }
+   .reach-airport {
+    margin-top: 5px;
+   }
+   .choose-destination img{
+    width: 45px;
+    height: 35px;
+   }
+   .choose-destination h1{
+    font-size: 0.7rem;
+   }
+   .choose-destination  p{
+    font-size: 0.6rem;
+   }
+   .make-payment p{
+    font-size: 0.6rem;
+   }
+   .make-payment h1{
+    font-size: 0.7rem;
+   }
+   .make-payment img{
+    width: 45px;
+    height: 35px;
+   }
+   .reach-airport img {
+    width: 45px;
+    height: 35px;
+   }
+   .reach-airport  p{
+    font-size: 0.6rem;
+   }
+   .reach-airport h1{
+    font-size: 0.7rem;
+   }
+
+   .trip-to-greece-card{
+
+    width: 260px;
+    height: 290px;
+    margin-left: 50px;
+    margin-top: 100px;
+
+}
+.trip-to-greece-card .image-to-greek{
+    width: 220px;
+    height: auto;
+
+}
+.trip-to-greece-card h1{
+    font-size: 0.8rem;
+}
+.trip-to-greece-card p{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+.small-card{
+    width: 160px;
+    height: 100px;
+    margin-top: -145px;
+}
+.small-card #load{
+    width: 60px;
+}
+.small-card img{
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: auto;
+}
+.small-card span{
+    margin-left: 50px;
+}
+.media-image img{
+    width: 25px;
+    margin-left: 20px;
+}
+.bx.bx-heart{
+    margin-right: 10px;
+}
+.bottom-card img{
+    margin-bottom: 3px;
+  margin-left: 20px;
+  
+}
+.bottom-card #buliding-number{
+    margin-bottom: 5px;
+    width: 30px;
+    white-space: nowrap;
+
+
+
+
+}
+
+
+
+
+
+
+
+@media( max-width: 1200px) {
+    
+    .steps-wrap{
+        margin-right: 230px;
+    }  
+    .bx.bx-heart{
+        margin-right: 10px;
+    }
+    .bottom-card img{
+       margin-left: 20px;
+      
+    }
+    .bottom-card #buliding-number{
+        margin-bottom: 5px;
+        width: 30px;
+        white-space: nowrap;
+    
+    
+    
+    
+    } 
+    .media-image img{
+  
+        margin-left: 40px;
+    }
+    .small-card span{
+        margin-left: 80px;
     }
 
-    .why-us-card{
-        width: 250px;
-        height: 250px;
-        margin-bottom: 7rem;
-    }
+}
+
+
+
+
 }
